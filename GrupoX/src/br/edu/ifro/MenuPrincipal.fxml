@@ -7,14 +7,24 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="210.0" prefWidth="398.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
+<AnchorPane id="AnchorPane" prefHeight="304.0" prefWidth="479.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
     <children>
-      <TextField fx:id="txtNumero1" layoutX="33.0" layoutY="39.0" />
-      <TextField fx:id="txtNumero2" layoutX="33.0" layoutY="93.0" />
-      <TextField fx:id="txtResultado" layoutX="33.0" layoutY="146.0" />
-      <Label layoutX="33.0" layoutY="22.0" text="Número 1" />
-      <Label layoutX="33.0" layoutY="78.0" text="Número 2" />
-      <Label layoutX="33.0" layoutY="129.0" text="Resultado" />
-      <Button fx:id="btnSoma" layoutX="257.0" layoutY="39.0" mnemonicParsing="false" onAction="#soma" text="Soma" />
+      <TextField fx:id="txtNumero1" layoutX="56.0" layoutY="95.0" />
+      <TextField fx:id="txtNumero2" layoutX="56.0" layoutY="149.0" />
+      <TextField fx:id="txtResultado" layoutX="56.0" layoutY="202.0" />
+      <Label layoutX="56.0" layoutY="78.0" text="Número 1" />
+      <Label layoutX="56.0" layoutY="134.0" text="Número 2" />
+      <Label layoutX="56.0" layoutY="185.0" text="Resultado" />
+      <Button fx:id="btnSoma" layoutX="280.0" layoutY="95.0" mnemonicParsing="false" onAction="#soma" text="Soma" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="479.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Cadastros">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#abrirCadastroAluno" text="Aluno" />
+                  <MenuItem mnemonicParsing="false" onAction="#fecharProjeto" text="Fechar" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
     </children>
 </AnchorPane>

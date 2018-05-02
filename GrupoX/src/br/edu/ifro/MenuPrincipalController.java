@@ -33,6 +33,8 @@ public class MenuPrincipalController implements Initializable {
     private TextField txtResultado;
     @FXML
     private Button btnSoma;
+    @FXML
+    private Button btnFechar;
     
     @FXML
     private void soma(ActionEvent event) {
@@ -53,7 +55,7 @@ public class MenuPrincipalController implements Initializable {
         try{
             FXMLLoader fxmlLoader = new FXMLLoader();
             fxmlLoader.setLocation(getClass().getResource("Aluno.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(),900,682);
+            Scene scene = new Scene(fxmlLoader.load(),400,300);
             Stage stage = new Stage();
             stage.setTitle("Cadastrar Aluno");
             stage.setScene(scene);
